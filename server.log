@@ -1,0 +1,10 @@
+Watching for file changes with StatReloader
+[14/Jan/2026 03:11:03] "GET /login/ HTTP/1.1" 200 1263
+[14/Jan/2026 03:11:04] "POST /login/ HTTP/1.1" 302 0
+[14/Jan/2026 03:11:04] "GET / HTTP/1.1" 302 0
+[14/Jan/2026 03:11:04] "GET /admin_dashboard/ HTTP/1.1" 200 1432
+[14/Jan/2026 03:11:05] "POST /logout/ HTTP/1.1" 302 0
+[14/Jan/2026 03:11:05] "GET /login/ HTTP/1.1" 200 1263
+[14/Jan/2026 03:11:06] "POST /login/ HTTP/1.1" 302 0
+[14/Jan/2026 03:11:06] "GET / HTTP/1.1" 302 0
+[14/Jan/2026 03:11:06] "GET /dashboard/ HTTP/1.1" 200 1217

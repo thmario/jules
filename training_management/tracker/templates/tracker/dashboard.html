@@ -1,0 +1,20 @@
+{% extends 'tracker/base.html' %}
+
+{% block title %}Your Dashboard{% endblock %}
+
+{% block content %}
+    <h2>Welcome, {{ user.username }}!</h2>
+
+    <h3>Your Training Progress</h3>
+    <p>You have completed {{ completed_courses }} out of {{ total_courses }} courses.</p>
+    <p>Progress: {{ progress_percentage|floatformat:2 }}%</p>
+
+    <h3>Your Courses</h3>
+    <ul>
+        {% for assignment in assignments %}
+            <li>{{ assignment.course.name }} - <strong>{{ assignment.get_status_display }}</strong></li>
+        {% empty %}
+            <li>You have no assigned courses.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
